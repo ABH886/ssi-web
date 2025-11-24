@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Batches Page</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
+  body{
+    background:#f5f7ff;
+    padding:30px;
+  }
+
+  h1{
+    text-align:center;
+    margin-bottom:20px;
+    font-size:28px;
+  }
+
+  .section-title{
+    font-size:22px;
+    margin:25px 0 10px;
+    color:#222;
+  }
+
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+  }
+
+  .card{
+    background:white;
+    border-radius:12px;
+    padding:20px;
+    border:1px solid #e5e7eb;
+    box-shadow:0 8px 20px rgba(0,0,0,0.05);
+    transition:.2s;
+  }
+  .card:hover{
+    transform:translateY(-5px);
+  }
+
+  .course-title{
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:10px;
+  }
+
+  .info{
+    font-size:14px;
+    color:#555;
+    margin-bottom:8px;
+  }
+
+  .tag{
+    display:inline-block;
+    padding:4px 10px;
+    background:#eef2ff;
+    color:#4338ca;
+    border-radius:20px;
+    font-size:12px;
+    margin-top:8px;
+  }
+
+  .btn{
+    display:inline-block;
+    margin-top:12px;
+    text-decoration:none;
+    background:#4f46e5;
+    color:white;
+    padding:8px 14px;
+    border-radius:8px;
+    font-size:14px;
+  }
+
+  /* timings style */
+  .time-box{
+    background:#fff;
+    padding:16px;
+    border-radius:10px;
+    border:1px solid #ddd;
+    box-shadow:0 4px 15px rgba(0,0,0,0.05);
+  }
+
+  .time-type{
+    font-weight:700;
+    font-size:18px;
+    margin-bottom:8px;
+  }
+
+  .time{
+    font-size:14px;
+    color:#444;
+    margin-bottom:6px;
+  }
+</style>
+</head>
+<body>
+
+<h1>📚 Batches</h1>
+
+<!-- Course Batch Section -->
+<h2 class="section-title">🔥 Course Batches</h2>
+
+<div class="grid">
+
+  <div class="card">
+    <div class="course-title">Fullstack Development</div>
+    <div class="info">Start Date: 10 Dec 2025</div>
+    <div class="info">Batch Time: 7 PM – 9 PM</div>
+    <div class="info">Duration: 4 Months</div>
+    <span class="tag">MERN Stack</span><br>
+    <a href="#" class="btn">Join Now</a>
+  </div>
+
+  <div class="card">
+    <div class="course-title">Data Science (Python)</div>
+    <div class="info">Start Date: 12 Dec 2025</div>
+    <div class="info">Batch Time: 6 PM – 8 PM</div>
+    <div class="info">Duration: 5 Months</div>
+    <span class="tag">Machine Learning</span><br>
+    <a href="#" class="btn">Join Now</a>
+  </div>
+
+  <div class="card">
+    <div class="course-title">Data Analytics</div>
+    <div class="info">Start Date: 15 Dec 2025</div>
+    <div class="info">Batch Time: 5 PM – 7 PM</div>
+    <div class="info">Duration: 3 Months</div>
+    <span class="tag">SQL • Excel • Power BI</span><br>
+    <a href="#" class="btn">Join Now</a>
+  </div>
+
+  <div class="card">
+    <div class="course-title">DevOps</div>
+    <div class="info">Start Date: 16 Dec 2025</div>
+    <div class="info">Batch Time: 8 PM – 9:30 PM</div>
+    <div class="info">Duration: 4 Months</div>
+    <span class="tag">Docker • CI/CD</span><br>
+    <a href="#" class="btn">Join Now</a>
+  </div>
+
+  <div class="card">
+    <div class="course-title">UI / UX Design</div>
+    <div class="info">Start Date: 20 Dec 2025</div>
+    <div class="info">Batch Time: 3 PM – 5 PM</div>
+    <div class="info">Duration: 2 Months</div>
+    <span class="tag">Figma</span><br>
+    <a href="#" class="btn">Join Now</a>
+  </div>
+
+</div>
+
+<!-- Timings Section -->
+<h2 class="section-title">🕒 Coaching Timings</h2>
+
+<div class="grid">
+
+  <div class="time-box">
+    <div class="time-type">🌅 Morning Batch</div>
+    <div class="time">6 AM – 8 AM</div>
+    <div class="time">Mon – Fri</div>
+  </div>
+
+  <div class="time-box">
+    <div class="time-type">🌇 Evening Batch</div>
+    <div class="time">6 PM – 9 PM</div>
+    <div class="time">Mon – Sat</div>
+  </div>
+
+  <div class="time-box">
+    <div class="time-type">📆 Weekend Batch</div>
+    <div class="time">10 AM – 4 PM</div>
+    <div class="time">Sat – Sun</div>
+  </div>
+
+</div>
+
+</body>
+</html>

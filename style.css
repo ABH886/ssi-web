@@ -30,8 +30,8 @@ body {
     margin-right: 20px;
 }
 .nav ul li a{
-    margin: 0 15px;
-    padding: 14px 20px;
+    margin: 0 25px;
+    padding: 24px 30px;
     color: #080808;
     text-decoration: none;
 }
@@ -44,19 +44,29 @@ body {
 .nav .btn{
     margin-right: 20px;
     padding: 15px 20px;
-    background-color: #2c05d8;
+    background-color: #210797;
     color: #fff;
+    margin-left: 150px;
     border: none;
     border-radius: 15px;
     cursor: pointer;
     text-decoration: none;
 }
-.nav .btn:hover{
-    background-color: #fff;
-    color: #2c05d8;
-    border: 2px solid #2c05d8;
+
+  .nav .btn:hover{
+    background-color: #ebe1e1;
+    color: #1b141b;
+    border: 2px solid #7e1868;
     transform: scale(1.1);
+
 }
+.nav .btn a{
+    color: white;
+}
+.nav .btn a:hover{
+    color: #080808;
+}
+
 .header-div {
     text-align: center;
     padding: 100px 20px;
@@ -76,14 +86,19 @@ body {
     font-size: 45px;
 }
 .header-div .btn1 {
+    
     padding: 15px 30px;
     background-color: #fff;
-    color: #2c05d8;
+    color: #e9e8ec;
     border: none;
     border-radius: 15px;
     cursor: pointer;
     font-size: 16px;
 }
+a{
+    text-decoration: none;
+}
+
 .header-div .btn1:hover {
     background-color: #2c05d8;
     color: #fff;
@@ -465,6 +480,10 @@ footer{
         flex-direction: column;
         height: auto;
         align-items: center;
+    }
+    .main-div{
+        flex-direction: column;
+        height: auto;
     }
 
     .form1 .contuct {

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Courses — Fullstack, Data, Analytics (HTML & CSS only)</title>
+  <style>
+    :root{
+      --bg:#f5f8fb; --card:#ffffff; --accent:#2563eb; --muted:#6b7280;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial; margin:0; background:linear-gradient(180deg,#f7fbff 0%,var(--bg) 100%); color:#0f172a}
+    .container{max-width:1100px; margin:36px auto; padding:22px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
+    h1{font-size:22px;margin:0}
+    p.lead{margin:4px 0 0;color:var(--muted);font-size:14px}
+
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px}
+
+    /* course list */
+    .courses{display:grid;gap:14px}
+    .course-card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06);display:flex;gap:14px;align-items:center}
+    .badge{font-size:12px;padding:6px 8px;border-radius:8px;background:rgba(37,99,235,0.08);color:var(--accent);border:1px solid rgba(37,99,235,0.12)}
+    .course-info{flex:1}
+    .course-title{font-weight:600;margin:0 0 6px}
+    .course-meta{font-size:13px;color:var(--muted);margin:0}
+    .tags{display:flex;gap:8px;margin-top:8px}
+    .tag{background:#eef6ff;padding:6px 8px;border-radius:999px;font-size:12px;color:#1e3a8a}
+    .cta{padding:8px 12px;border-radius:8px;border:none;background:var(--accent);color:white;cursor:pointer}
+
+    /* sidebar */
+    .sidebar{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.04)}
+    .section{margin-bottom:12px}
+    .section h3{margin:0 0 8px;font-size:14px}
+    .checkbox-list{display:flex;flex-direction:column;gap:8px}
+    label.inline{display:flex;align-items:center;gap:8px}
+    input[type='checkbox']{width:16px;height:16px}
+
+    /* form styles (non-functional: HTML only) */
+    .form-row{display:flex;gap:8px}
+    input[type='text'],select,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6edf6}
+    textarea{min-height:90px}
+    .muted{color:var(--muted);font-size:13px}
+
+    /* small screens */
+    @media (max-width:880px){.grid{grid-template-columns:1fr}.sidebar{order:2}.courses{order:1}}
+
+    /* simple accessibility improvements */
+    a.button{display:inline-block;padding:10px 14px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>Courses Catalog</h1>
+        <p class="lead">Static HTML & CSS version — Fullstack, Data, Analytics. (No JavaScript)</p>
+      </div>
+      <nav aria-label="primary actions">
+        <a class="button" href="#courses">View Courses</a>
+      </nav>
+    </header>
+
+    <main class="grid">
+
+      <section id="courses" class="courses" aria-labelledby="courses-heading">
+        <h2 id="courses-heading" style="font-size:16px;margin:0 0 8px">Available Courses</h2>
+
+        <article class="course-card" aria-labelledby="c1-title">
+          <div class="badge">Fullstack</div>
+          <div class="course-info">
+            <h3 id="c1-title" class="course-title">Fullstack Web Development (MERN)</h3>
+            <p class="course-meta">Build web apps using MongoDB, Express, React and Node. Project-based learning.</p>
+            <div class="tags"><span class="tag">Intermediate</span><span class="tag">Fullstack</span></div>
+          </div>
+          <div>
+            <a href="#" class="cta">Enroll</a>
+          </div>
+        </article>
+
+        <article class="course-card" aria-labelledby="c2-title">
+          <div class="badge">Data</div>
+          <div class="course-info">
+            <h3 id="c2-title" class="course-title">Data Science with Python</h3>
+            <p class="course-meta">Pandas, NumPy, machine learning basics and model evaluation. Hands-on notebooks.</p>
+            <div class="tags"><span class="tag">Advanced</span><span class="tag">Data</span></div>
+          </div>
+          <div>
+            <a href="#" class="cta">Enroll</a>
+          </div>
+        </article>
+
+        <article class="course-card" aria-labelledby="c3-title">
+          <div class="badge">Analytics</div>
+          <div class="course-info">
+            <h3 id="c3-title" class="course-title">Business Analytics with SQL & Excel</h3>
+            <p class="course-meta">SQL querying, Excel modelling and data storytelling for business decisions.</p>
+            <div class="tags"><span class="tag">Beginner</span><span class="tag">Analytics</span></div>
+          </div>
+          <div>
+            <a href="#" class="cta">Enroll</a>
+          </div>
+        </article>
+
+        <article class="course-card" aria-labelledby="c4-title">
+          <div class="badge">DevOps</div>
+          <div class="course-info">
+            <h3 id="c4-title" class="course-title">DevOps Foundations</h3>
+            <p class="course-meta">Introduction to CI/CD, Docker and cloud deployment concepts.</p>
+            <div class="tags"><span class="tag">Intermediate</span><span class="tag">DevOps</span></div>
+          </div>
+          <div>
+            <a href="#" class="cta">Enroll</a>
+          </div>
+        </article>
+
+        <div class="muted">Note: this page is static HTML + CSS only. The checkboxes and add-course form are for visual layout only; they do not submit or filter without JavaScript or server-side code.</div>
+
+      </section>
+
+      <aside class="sidebar" aria-labelledby="filters-heading">
+        <div class="section">
+          <h3 id="filters-heading">Filters (visual only)</h3>
+          <form>
+            <div class="checkbox-list">
+              <label class="inline"><input type="checkbox" checked disabled /> Fullstack</label>
+              <label class="inline"><input type="checkbox" checked disabled /> Data</label>
+              <label class="inline"><input type="checkbox" checked disabled /> Analytics</label>
+              <label class="inline"><input type="checkbox" checked disabled /> DevOps</label>
+              <label class="inline"><input type="checkbox" checked disabled /> UI/UX</label>
+            </div>
+
+            <h3 style="margin-top:12px">Level (visual only)</h3>
+            <div class="checkbox-list">
+              <label class="inline"><input type="checkbox" checked disabled /> Beginner</label>
+              <label class="inline"><input type="checkbox" checked disabled /> Intermediate</label>
+              <label class="inline"><input type="checkbox" checked disabled /> Advanced</label>
+            </div>
+          </form>
+        </div>
+
+        <div class="section">
+          <h3>Add a Course (visual)</h3>
+          <form>
+            <label class="muted">Course title</label>
+            <input type="text" placeholder="e.g. Fullstack with MERN" aria-label="Course title" />
+
+            <label class="muted" style="margin-top:8px">Domain</label>
+            <select aria-label="Domain">
+              <option>Fullstack</option>
+              <option>Data</option>
+              <option>Analytics</option>
+              <option>DevOps</option>
+              <option>UI/UX</option>
+            </select>
+
+            <label class="muted" style="margin-top:8px">Level</label>
+            <select aria-label="Level">
+              <option>Beginner</option>
+              <option>Intermediate</option>
+              <option>Advanced</option>
+            </select>
+
+            <label class="muted" style="margin-top:8px">Short description</label>
+            <textarea placeholder="Short description" aria-label="Description"></textarea>
+
+            <div style="margin-top:10px;">
+              <a href="#" class="button">Add Course</a>
+            </div>
+          </form>
+        </div>
+      </aside>
+
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Study Materials — 1 to 6</title>
+  <style>
+    :root{
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --muted: #6b7280;
+      --accent: linear-gradient(135deg,#2563eb,#7c3aed);
+      --shadow: 0 8px 24px rgba(8,15,52,0.06);
+      --radius: 14px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+      background: radial-gradient(ellipse at top left, #f0f6ff, var(--bg));
+      padding:28px;
+    }
+    .wrap{max-width:1100px;margin:0 auto;}
+    header{display:flex;justify-content:space-between;margin-bottom:20px;}
+    header h1{margin:0;font-size:20px;}
+    header p{margin:0;color:var(--muted);font-size:13px}
+
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:18px;
+    }
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:18px;
+      box-shadow:var(--shadow);
+      display:flex;
+      gap:12px;
+      transition:.2s;
+    }
+    .card:hover{transform:translateY(-6px);}
+    .num{
+      min-width:56px;height:56px;border-radius:12px;
+      display:flex;align-items:center;justify-content:center;
+      color:white;font-size:20px;font-weight:700;
+    }
+
+    .card:nth-child(1) .num{background:linear-gradient(135deg,#ef4444,#fb7185)}
+    .card:nth-child(2) .num{background:linear-gradient(135deg,#f59e0b,#f97316)}
+    .card:nth-child(3) .num{background:linear-gradient(135deg,#10b981,#06b6d4)}
+    .card:nth-child(4) .num{background:linear-gradient(135deg,#6366f1,#7c3aed)}
+    .card:nth-child(5) .num{background:linear-gradient(135deg,#3b82f6,#60a5fa)}
+    .card:nth-child(6) .num{background:linear-gradient(135deg,#8b5cf6,#a78bfa)}
+
+    .title{margin:0;font-size:16px;font-weight:700}
+    .desc{margin:6px 0 10px;color:var(--muted);font-size:13px}
+
+    .btn{
+      padding:8px 12px;border-radius:10px;
+      text-decoration:none;font-size:13px;
+    }
+    .primary{
+      background:linear-gradient(90deg,#2563eb,#7c3aed);
+      color:white;
+    }
+    .ghost{border:1px solid #ccc;color:#444;}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Study Materials (1 → 6)</h1>
+        <p>Click to download</p>
+      </div>
+    </header>
+
+    <section class="grid">
+
+      <article class="card">
+        <div class="num">1</div>
+        <div>
+          <h3 class="title">Fullstack Web Development</h3>
+          <p class="desc">MERN stack, APIs, auth & deployment.</p>
+          <a class="btn primary" href="material_1.pdf">Download PDF</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="num">2</div>
+        <div>
+          <h3 class="title">Data Science with Python</h3>
+          <p class="desc">Pandas, NumPy, ML models & EDA.</p>
+          <a class="btn primary" href="material_2.pdf">Download PDF</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="num">3</div>
+        <div>
+          <h3 class="title">Data Analytics</h3>
+          <p class="desc">SQL, Excel & BI tools.</p>
+          <a class="btn primary" href="material_3.pdf">Download PDF</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="num">4</div>
+        <div>
+          <h3 class="title">DevOps Foundations</h3>
+          <p class="desc">Docker, CI/CD & pipelines.</p>
+          <a class="btn primary" href="material_4.pdf">Download PDF</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="num">5</div>
+        <div>
+          <h3 class="title">UI / UX Design</h3>
+          <p class="desc">Wireframes, design thinking.</p>
+          <a class="btn primary" href="material_5.pdf">Download PDF</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="num">6</div>
+        <div>
+          <h3 class="title">MCA / DSA Notes</h3>
+          <p class="desc">Arrays, trees, graphs & DP.</p>
+          <a class="btn primary" href="material_6.pdf">Download PDF</a>
+        </div>
+      </article>
+
+    </section>
+  </div>
+</body>
+</html>
