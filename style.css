@@ -8,6 +8,7 @@ body {
   
   background-color: #f4f4f4;
   color: #333;
+  overflow-x: hidden;
   
 }
 .nav{
@@ -131,19 +132,22 @@ header{
 }
 .cards{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
     padding: 20px;
     margin-top: 50px;
     justify-items: center;
     align-items: start;
+    max-width: 100%;
+    overflow-x: hidden;
 
 }
 .card{
     background-color: #faf5f5;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     padding: 20px;
     text-align: center;
 }
@@ -195,13 +199,16 @@ section .box{
     justify-content: center;
     gap: 70px;
     margin-bottom: 20px;
+    flex-wrap: wrap;
+    overflow-x: hidden;
 
 }
 section .box .boxs{
     background-color: #faf5f5;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     padding: 20px;
     text-align: center;
 }
@@ -217,7 +224,8 @@ section .box .boxs{
     background-color: #79b0dd;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     padding: 20px;
     text-align: center;
 }
@@ -287,18 +295,21 @@ main{
 }
 .main-cards{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
     padding: 20px;
    
     justify-items: center;
     align-items: start;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 .main-card{
     background-color: #faf5f5;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
     
     padding: 20px;
     text-align: center;
@@ -330,11 +341,12 @@ main{
 .carear-cards{
     display: flex;
     color: #130e0e;
-    height:800px;
     text-align: center;
     padding: 70px 50px;
     justify-content: center;
     gap: 50px;
+    flex-wrap: wrap;
+    overflow-x: hidden;
 
 }
 .carear-card{
@@ -351,7 +363,8 @@ main{
 
 .box-card1{
 
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     padding: 20px;
     text-align: center;
     gap: 20px;
@@ -402,8 +415,8 @@ main{
     display: flex;
     flex-direction: column;
     gap: 15px;
-    width: 400px;
-    height: 600px;
+    width: 100%;
+    max-width: 400px;
     padding: 20px;
     border-radius: 10px;
     border: 2px solid #ccc;
