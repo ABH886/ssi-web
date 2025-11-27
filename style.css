@@ -477,7 +477,8 @@ footer{
     }
 
     .cards {
-        grid-template-columns: auto auto;
+        grid-template-columns: auto ;
+        flex-direction: column;
     }
 
     .main-cards {
@@ -535,13 +536,19 @@ footer{
         width: 80%;
         max-width: 250px;
     }
-
+hi
     .cards {
         grid-template-columns: auto;
+        flex-direction: column;
     }
 
     .main-cards {
         grid-template-columns: auto;
+    }
+    .box-card1{
+        height: auto;
+        width: 50%;
+
     }
 
     .card,
